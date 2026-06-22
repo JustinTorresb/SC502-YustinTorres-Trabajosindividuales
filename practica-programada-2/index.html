@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<!-- Ejercicio 1: Cálculo de las cargas sociales en Costa Rica. -->
+
+<body>
+    <header>
+        <h1> Cálculo de Cargas Sociales (Costa Rica)</h1>
+    </header>
+
+    <main>
+        <section id="Ejm1">
+            <h2>Ejemplo 1</h2>
+            <p>Calcular el monto de las cargas sociales.</p>
+            <label for="salarioBruto">Salario: </label>
+            <input type="number" id="salarioBruto" placeholder="Ej: 850000" min="0" step="1000">
+            <button onclick="calcularPlanilla()">Calcular</button>
+
+            <div id="resultado">
+                <p>Cargas sociales (10.83%): <span id="montoCargas"></span></p>
+                <p>Impuesto sobre la renta: <span id="montoRenta"></span></p>
+                <p>Salario neto: <span id="montoNeto"></span></p>
+            </div>
+        </section>
+
+
+        <!-- Ejercicio 2: Manipulación del DOM -->
+
+        <section id="Ejm2">
+            <h2>Ejemplo 2</h2>
+            <p>Manipulación del DOM.</p>
+            <p id="parrafoDemo">Este es el párrafo original. Todavía no ha sido modificado.</p>
+            <button onclick="cambiarParrafo()">Cambiar contenido del párrafo</button>
+        </section>
+        </section>
+
+
+        <!-- Ejercicio 3: Condicional de edad.-->
+        <section id="Ejm3">
+            <h2>Ejemplo 3</h2>
+            <h2>Estructura de Control de Flujo (Condicionales)</h2>
+            <label for="edad">Ingrese su edad: </label>
+            <input type="number" id="edad" placeholder="Ej: 25" min="0">
+            <button onclick="verificarEdad()">Verificar edad</button>
+
+            <p id="resultadoEdad"></p>
+        </section>
+
+        <!-- Ejercicio 4: Arreglo de objetos-->
+
+        <section id="Ejm4">
+            <h2>Ejemplo 4</h2>
+            <h2>Manipulación de arreglos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaAlumnos">
+
+                </tbody>
+            </table>
+
+            <p id="promedioNota"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
